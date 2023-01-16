@@ -30,7 +30,8 @@ def get_actions(fichier_csv):
 
 def get_best_invest(actions, max_cost):
     """
-    Cette fonction permet de trouver l'investissment maximal qui peut être obtenu à partir d'une liste d'action pour un
+    Cette fonction permet de trouver l'investissement maximal qui peut être obtenu à partir d'une liste d'action
+    pour un
     coût maximal.
     Une liste 'memory_action' et une liste 'memory_value' sont créées. Ces listes seront consultées comme s'il s'agit
     de tableaux.
@@ -58,7 +59,7 @@ def get_best_invest(actions, max_cost):
     memory_actions = [[[] for cost in range(max_cost + 1)] for number_of_actions in range(len(list_of_actions) + 1)]
     memory_value = [[0 for cost in range(max_cost + 1)] for number_of_actions in range(len(list_of_actions) + 1)]
     for number_of_actions in range(1, len(list_of_actions)+1):#On ajoute les actions une par une (i.e. ligne du tableau)
-        for cost in range(max_cost + 1): # On parcourt les coût de 0 à max_cost + 1 (i.e. colonne du tableau)
+        for cost in range(max_cost + 1): # On parcourt les coûts de 0 à max_cost + 1 (i.e. colonne du tableau)
             # On récupère dans le tableau le bénéfice obtenu si l'action n'est pas prise en compte
             exclude_action = memory_value[number_of_actions - 1][cost]
             # Si le prix de l'action que l'on tente d'ajouter est supérieur au coût que l'on teste.
