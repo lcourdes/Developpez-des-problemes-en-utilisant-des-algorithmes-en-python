@@ -1,4 +1,6 @@
 import csv
+import time
+start_time = time.time()
 
 
 def get_actions(fichier_csv):
@@ -71,9 +73,10 @@ def print_information(invest):
 
 
 def main():
-    actions = get_actions('dataset2_Python+P7.csv')
+    actions = get_actions('bruteforce_dataset.csv')
     sorted_actions = sort_actions_by_profit_percentage(actions)
     invest = get_invest(sorted_actions)
+    print("--- %s seconds ---" % (time.time() - start_time))
     print_information(invest)
 
 

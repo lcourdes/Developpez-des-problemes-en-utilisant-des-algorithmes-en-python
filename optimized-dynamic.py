@@ -109,7 +109,7 @@ def print_information(invest, actions):
 
 
 def main():
-    actions = get_actions('dataset2_Python+P7.csv')
+    actions = get_actions('bruteforce_dataset.csv')
     invest = get_best_invest(actions, 50000)
     print("--- %s seconds ---" % (time.time() - start_time))
     print_information(invest, actions)
