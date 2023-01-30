@@ -3,7 +3,7 @@
 ## Description
 Le but de ce projet est de concevoir un algorithme qui maximise le profit de clients après deux ans d'investissement dans des actions.
 L'algorithme doit suggérer une liste des actions les plus rentables. 
-La description plus complète du fonctionnement des algorithmes se trouve dans le fichier description.pdf.
+La description plus complète du fonctionnement des algorithmes se trouve dans le fichier diapositives.pdf.
 
 ### Contraintes 
 Trois contraintes doivent être respectées :
